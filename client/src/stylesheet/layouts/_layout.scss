@@ -1,0 +1,67 @@
+.Layout {
+  width: 100%;
+
+  &__colors {
+    min-height: 700px;
+    padding: 20px;
+    background: linear-gradient(
+      45deg,
+      #971f1f,
+      #54197c,
+      #f0a70c,
+      #bb3254,
+      maroon
+    );
+    background-size: 900% 300%;
+    animation: gradient 16s infinite;
+    animation-direction: alternate;
+
+    & h3 {
+      margin-top: 200px;
+    }
+
+    & p {
+      color: #fff;
+    }
+  }
+
+  &__content {
+    padding: 30px;
+  }
+
+  &__menu {
+    &-bar {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 40px;
+    }
+
+    &-item {
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #fff;
+      color: #fff;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: none;
+        color: #fff;
+      }
+
+      &--active {
+        border: 1px solid #000000 !important;
+        color: #000 !important;
+      }
+    }
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0%;
+  }
+
+  100% {
+    background-position: 100%;
+  }
+}

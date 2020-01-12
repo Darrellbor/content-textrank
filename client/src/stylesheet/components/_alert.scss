@@ -1,0 +1,70 @@
+.Alert {
+  top: 50px;
+  right: 40px;
+  max-height: 80%;
+  position: fixed;
+  max-width: 350px;
+  z-index: 1350;
+  overflow: auto;
+
+  & .alert {
+    animation: alertAnimation 1s 1 0s linear;
+  }
+
+  & button {
+    outline: none;
+    background-color: transparent;
+    border: none;
+    font-size: 1.7rem;
+    right: 30px;
+    top: 5px;
+    position: inherit;
+    color: $brand-color;
+
+    &:hover {
+      animation: closeAnimation 0.6s 1 0s linear;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-bs-sm) {
+  .Alert {
+    max-width: 80% !important;
+  }
+}
+
+@keyframes closeAnimation {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  25% {
+    transform: rotate(90deg) scale(1.5);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.5);
+  }
+  75% {
+    transform: rotate(270deg) scale(1.3);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+@keyframes alertAnimation {
+  0% {
+    transform: scale(0);
+  }
+  25% {
+    transform: scale(0.2);
+  }
+  50% {
+    transform: scale(0.5);
+  }
+  75% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

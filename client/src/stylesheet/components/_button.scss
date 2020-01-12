@@ -1,0 +1,65 @@
+.Button {
+  box-sizing: border-box;
+  border-radius: 9px;
+  padding: 13px;
+  text-decoration: none;
+  min-width: 20%;
+
+  &:focus {
+    outline: none;
+  }
+
+  &--brand {
+    background-color: #971f1f;
+    color: #fff;
+    border: none;
+
+    &:hover {
+      box-shadow: 0px 0px 2px 1px #971f1f;
+    }
+
+    &--reverse {
+      background-color: #fff;
+      color: #971f1f;
+      border: 1px solid #971f1f;
+
+      &:hover {
+        box-shadow: 0px 0px 2px 1px #971f1f;
+      }
+    }
+  }
+
+  &--grey {
+    background: #637d711a;
+    border: 1px solid #345948;
+    color: $brand-color-lighter;
+
+    &:hover {
+      box-shadow: 0px 0px 2px 1px #637d711a;
+    }
+  }
+
+  &--white {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #ffffff;
+    color: #fff;
+
+    &:hover {
+      box-shadow: 0px 0px 2px 1px #d9e2de1a;
+    }
+  }
+
+  &--danger {
+    background: #cb3b3b;
+    border: 1px solid #bb4545;
+    color: #fff;
+
+    &:hover {
+      box-shadow: 0px 0px 2px 1px #e4d7d71a;
+    }
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+}

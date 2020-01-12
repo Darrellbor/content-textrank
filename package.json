@@ -1,0 +1,35 @@
+{
+  "name": "content-textrank",
+  "version": "1.0.0",
+  "description": "An app to summarize lecture notes",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js --ignore client/ --ignore node_modules/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Darrellbor/textrank.git"
+  },
+  "keywords": [
+    "summarize",
+    "lecture",
+    "notes",
+    "easily"
+  ],
+  "author": "Darrel Idiagbor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Darrellbor/textrank/issues"
+  },
+  "homepage": "https://github.com/Darrellbor/textrank#readme",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.3",
+    "mongoose": "^5.4.2",
+    "text-summarization": "^1.0.3",
+    "textrank": "^1.0.5"
+  }
+}
