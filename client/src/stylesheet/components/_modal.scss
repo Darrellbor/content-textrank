@@ -1,6 +1,6 @@
 .modal {
-  display: block;
-  overflow: auto;
+  display: block !important;
+  overflow: auto !important;
   padding-left: 6%;
   padding-right: 6%;
 
@@ -14,7 +14,7 @@
     height: 100%;
     width: 100%;
     display: block;
-    background-color: #00000080;
+    background-color: #00000080 !important;
     animation: modalBackdrop 0.5s 0s ease-in-out;
   }
 

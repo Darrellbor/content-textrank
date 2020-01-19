@@ -27,18 +27,19 @@ const Layout = props => {
             <div className="Layout__menu-bar">
               <NavLink
                 to="/"
+                exact
                 className="Layout__menu-item"
                 activeClassName="Layout__menu-item--active"
               >
                 Home
               </NavLink>
-              <NavLink
+              {/* <NavLink
                 to="/about"
                 className="Layout__menu-item"
                 activeClassName="Layout__menu-item--active"
               >
                 About
-              </NavLink>
+              </NavLink> */}
               <NavLink
                 to="/slides"
                 className="Layout__menu-item"
@@ -47,13 +48,13 @@ const Layout = props => {
                 Slides
               </NavLink>
 
-              <NavLink
+              {/* <NavLink
                 to="/team"
                 className="Layout__menu-item"
                 activeClassName="Layout__menu-item--active"
               >
                 Team
-              </NavLink>
+              </NavLink> */}
             </div>
           </div>
         </div>
